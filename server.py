@@ -18,11 +18,16 @@ import connexion
 # Import environment class
 from config import ProductionConfig as ModeConfig
 
+# import SSLify for SSL Handling
+from flask_sslify import SSLify
+
 # Application instance
 # app = Flask(__name__, template_folder="templates")
 # app.config.from_object(config.DevelopmentConfig)
 app  = connexion.App(__name__, specification_dir='./')
 
+# Implement SSL Handling
+SSLify(app)
 # Read the Swagger.yml file to configure endpoints
 app.add_api('swagger.yml')
 
