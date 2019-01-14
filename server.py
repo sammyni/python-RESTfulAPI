@@ -16,7 +16,7 @@ from flask import render_template as Render
 import connexion
 
 # Import environment class
-from config import DevelopmentConfig as ModeConfig
+from config import ProductionConfig as ModeConfig
 
 # Application instance
 # app = Flask(__name__, template_folder="templates")
