@@ -37,4 +37,4 @@ def home():
     return Render('home.html')
 
 if __name__ == '__main__':
-    app.run(host=AppConfig.HOST, port=AppConfig.PORT, debug=ModeConfig.DEBUG)
+    app.run(debug=ModeConfig.DEBUG)
