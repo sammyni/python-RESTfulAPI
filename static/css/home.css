@@ -2,7 +2,7 @@
  * This is the CSS stylesheet for the demo people application
  */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@import url(//fonts.googleapis.com/css?family=Roboto:400,300,500,700);
 
 body, .ui-btn {
     font-family: Roboto;
