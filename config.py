@@ -6,7 +6,7 @@
 class Config(object):
     """docstring for Config."""
     PORT = 5000
-    HOST = 'localhost'
+    HOST = '0.0.0.0'
 
 
 class ProductionConfig(object):
