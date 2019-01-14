@@ -27,7 +27,7 @@ from flask_sslify import SSLify
 app  = connexion.App(__name__, specification_dir='./')
 
 # Implement SSL Handling
-SSLify(app)
+# SSLify(app)
 # Read the Swagger.yml file to configure endpoints
 app.add_api('swagger.yml')
 
