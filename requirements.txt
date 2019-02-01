@@ -1,5 +1,12 @@
-
-connexion[swagger-ui]
 Flask
-Flask-SSLify
 gunicorn
+Flask-SSLify
+connexion[swagger-ui]
+
+psycopg2-binary
+Flask-Script
+Flask-Migrate
+Flask-SQLAlchemy
+flask-marshmallow
+marshmallow-sqlalchemy
+marshmallow
