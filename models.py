@@ -1,9 +1,13 @@
 # Models and associated schema
-
+import app
 from datetime import datetime
-from app import db, ma
 from sqlalchemy.dialects.postgresql import JSON
+from flask_marshmallow import Marshmallow
 
+# Initialize Marshmallow
+ma = Marshmallow(app)
+
+db = app.db
 class Person(db.Model):
     __tablename__ = 'person'
     id = db.Column(db.Integer, primary_key=True)

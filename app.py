@@ -11,7 +11,7 @@ import connexion
 from flask_sslify import SSLify # import SSLify for SSL Handling
 from flask import render_template as Render
 from flask_sqlalchemy import SQLAlchemy
-from flask_marshmallow import Marshmallow
+
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
@@ -34,11 +34,9 @@ SSLify(app)
 # Create the SQLAlchemy db instance
 db = SQLAlchemy(app)
 
-# Initialize Marshmallow
-ma = Marshmallow(app)
-
 # Import models for migration
-from models import Person
+# from models import Person
+import models
 
 # Read the Swagger.yml file to configure endpoints
 connex_app.add_api('swagger.yml')
