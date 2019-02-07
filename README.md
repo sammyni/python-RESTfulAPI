@@ -1,4 +1,4 @@
-# python-RESTfulAPI
+# Python RESTfulAPI
 RESTfulAPI with python using Flask and connexion
 
 ## Tags
